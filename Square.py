@@ -1,7 +1,9 @@
 #Square.py
 import turtle
 t = turtle.Pen()
-t.pencolor("blue")
-for i in range(100):
-    t.circle(i)
+turtle.bgcolor("black")
+colors =["red","yellow","blue","green"]
+for i in range(1000):
+    t.pencolor(colors[i%4])
+    t.forward(i)
     t.left(91)  # 角度
